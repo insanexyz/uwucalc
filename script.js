@@ -96,8 +96,7 @@ numberButtons.forEach(button => {
     calculator.updateDisplay();
 
 
-    /*
-      // Floating heart
+    // Floating heart
     const heart = document.createElement('span');
     heart.innerHTML = '💖';  // Or ❤️
     heart.classList.add('floating-heart');
@@ -114,7 +113,6 @@ numberButtons.forEach(button => {
 
     uwuSound.currentTime = 0; // For rapid sound
     uwuSound.play();
-    */
 
   })
 })
@@ -136,13 +134,11 @@ equalsButton.addEventListener("click", () => {
   calculator.compute();
   calculator.updateDisplay();
 
-  /*
-    clickSound.currentTime = 0; // For rapid sound
-    clickSound.play();
-    calculatorContainer.classList.remove("shake");
-    void calculatorContainer.offsetWidth;  // Forces reflow
-    calculatorContainer.classList.add("shake");
-  */
+  clickSound.currentTime = 0; // For rapid sound
+  clickSound.play();
+  calculatorContainer.classList.remove("shake");
+  void calculatorContainer.offsetWidth;  // Forces reflow
+  calculatorContainer.classList.add("shake");
 })
 
 deleteButton.addEventListener("click", () => {
