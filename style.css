@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: normal;
+  color: wheat;
+  font-family: 10px;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #0E2148, 0 0 30px #0E2148, 0 0 40px #0E2148, 0 0 55px #0E2148, 0 0 75px #0E2148;
+}
+
+nav p {
+  font-size: 4rem;
+}
+
+
+.calculator-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+  gap: 2px;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  margin-top: 10vh;
+  background-color: #0E2148;
+  box-shadow: 0px 0px 87px 15px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 0px 87px 15px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 0px 87px 15px rgba(0, 0, 0, 0.79);
+}
+
+.calculator-container>button {
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: #483AA0;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.calculator-container>button:hover {
+  background-color: #7965C1;
+}
+
+.calculator-container>button:active {
+  background-color: #E3D095;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #0E2148;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: #E3D095;
+  font-size: 1rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer {
+  position: absolute;
+  /* bottom: 0; */
+  margin-top: 70px;
+  padding: 50px;
+  text-align: center;
+  width: 100vw;
+}
+

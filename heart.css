@@ -1,0 +1,29 @@
+.floating-heart {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  font-size: 24px;
+  color: #ff69b4;
+  pointer-events: none;  /* No interference */
+  z-index: 10;
+  opacity: 0.6;
+  filter: blur(1px);  /* Blurred for visibility */
+  animation: floatUp 3s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.6;
+    filter: blur(1px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(0.5px);
+  }
+  100% {
+    transform: translateY(-150vh) translateX(50px) rotate(20deg);  /* Up + sway */
+    opacity: 0;
+    filter: blur(3px);
+  }
+}
