@@ -68,11 +68,12 @@ class Calculator {
   }
 
   updateDisplay() {
+    this.currentOperandTextElement.innerText = this.currentOperand;
     if (this.operation !== undefined) {
       this.previousOperandTextElement.innerText = ` ${this.previousOperand} ${this.operation}`;
+    } else {
+      this.previousOperandTextElement.innerText = "";
     }
-    this.currentOperandTextElement.innerText = this.currentOperand;
-    // this.previousOperandTextElement = this.previousOperand;
   }
 }
 
